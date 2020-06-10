@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // this is the IB outlet for the first dice image
+    @IBOutlet weak var diceImageView1: UIImageView!
+    // IBOutlet for the second dice image
+    @IBOutlet weak var diceImageView2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+        
+        //sets the first dice to half trasnparency
+        //diceImageView1.alpha = 0.50
     }
-
-
 }
 
